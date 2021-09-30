@@ -8,7 +8,7 @@ from resources.library import Library, LibraryList
 from db import db
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://ekirapa:99405897@localhost/library'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'amy'
 api = Api(app)
